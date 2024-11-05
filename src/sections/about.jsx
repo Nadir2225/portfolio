@@ -1,9 +1,9 @@
 import React from 'react'
 
-const About = () => {
+const About = (props) => {
   return (
-    <div style={{width: '100%', height: '100vh'}}>
-        <div className='nadir'></div>
+    <div ref={props.about} style={{width: '100%', minHeight: '100vh'}}>
+        about
     </div>
   )
 }
