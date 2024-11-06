@@ -1,11 +1,13 @@
 import React from 'react'
+import ScrollSection from '../components/ScrollSection'
 
-const Projcts = (props) => {
+const Projects = (props) => {
   return (
-    <div ref={props.projects} style={{width: '100%', minHeight: '100vh'}}>
-        projects
+    <div className='projects' ref={props.projects}>
+      <div className='titles'>Projects <div></div></div>
+      <ScrollSection />
     </div>
   )
 }
 
-export default Projcts
+export default Projects

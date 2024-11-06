@@ -323,6 +323,8 @@
   font-weight: bold;
   position: relative;
   margin-bottom: 40px;
+  height: max-content;
+  width: max-content;
 }
 
 .titles > div {
@@ -526,4 +528,73 @@
   .my-contacts {
     display: none;
   }
+}
+
+/* projects */
+.projects {
+  width: 100%;
+  min-height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  opacity: 0; 
+  transform: translateX(100px); 
+  transition: opacity 1s ease, transform 1s ease;
+} */
+.scroll-section-outer {
+  overflow: hidden;
+}
+
+.scroll-section-inner {
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.scroll-section h3 {
+  color: var(--primaryTextColor);
+  letter-spacing: var(--headlineMedium);
+  font-size: var(--headlineMedium);
+  text-transform: uppercase;
+}
+/* Progress Line Container */
+.progress-line-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #ddd; /* Light background color for the progress container */
+  z-index: 1000;
+}
+
+/* Progress Line */
+.progress-line {
+  height: 100%;
+  background-color: #3498db; /* Blue color for the progress line */
+  transition: width 0.1s ease;
+}
+
+.pr {
+  width: 30vw;
+  height: 40vh;
+  border-radius: 20px;
 }
