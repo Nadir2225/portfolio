@@ -285,7 +285,7 @@
   -webkit-background-clip: text; /* For Chrome and Safari */
   -webkit-text-fill-color: transparent; /* For Chrome and Safari */
   background-clip: text; /* For Firefox */
-  text-fill-color: transparent; /* For Firefox */
+  /* text-fill-color: transparent; */
 }
 
 .home-button {
@@ -553,48 +553,108 @@
 
 .scroll-section-inner {
   height: 100vh;
-  width: 400vw;
+  width: max-content;
   display: flex;
   flex-direction: row;
   position: relative;
+  align-items: center;
+  padding-left: 20px;
+  gap: 20px;
 }
 
 .scroll-section {
-  height: 90vh;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  width: 320px;
+  height: 370px;
+  box-shadow: 0 4px 8px rgba(255, 0, 150, 0.1);
+}
+
+.scroll-section:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.05);
+  box-shadow: 
+    0 4px 8px rgba(255, 0, 150, 0.3),
+    0 8px 16px rgba(255, 75, 150, 0.2),
+    0 4px 8px rgba(255, 150, 150, 0.1);
+}
+.scroll-section > img {
+  width: 100%;
+}
+.scroll-section-title {
+  margin: 10px 0px;
+  font-weight: bold;
+}
+.scroll-section-desc {
+  font-size: .9rem;
+  text-align: center;
+  width: 90%;
+}
+.scroll-section-btns {
+  position: absolute;
+  bottom: 10px;
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 10px;
 }
-
-.scroll-section h3 {
-  color: var(--primaryTextColor);
-  letter-spacing: var(--headlineMedium);
-  font-size: var(--headlineMedium);
-  text-transform: uppercase;
+.scroll-section-btns a {
+  text-decoration: none;
 }
-/* Progress Line Container */
-.progress-line-container {
-  position: fixed;
-  top: 0;
-  left: 0;
+.scroll-section-btns div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 7px;
+  padding: 5px;
+  width: max-content;
+  transition: all 0.5s ease;
+  background: linear-gradient(45deg, var(--darkest-blue), var(--pink-purple), var(--dark-purple), var(--second-light-blue));
+  cursor: pointer;
+  background-size: 200%;
+}
+.scroll-section-btns div:hover {
+  transition: all 0.5s ease;
+  background-position: right;
+}
+
+.scroll-section-btns div:active {
+  opacity: .5;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 320px;
+  height: 250px;
+  background: linear-gradient(45deg, var(--underline-blue), var(--purple), var(--second-blue), var(--dark-purple));
+}
+.badge > div {
   width: 100%;
-  height: 5px;
-  background-color: #ddd; /* Light background color for the progress container */
-  z-index: 1000;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
-
-/* Progress Line */
-.progress-line {
+.scroll-section-inner > div {
   height: 100%;
-  background-color: #3498db; /* Blue color for the progress line */
-  transition: width 0.1s ease;
-}
-
-.pr {
-  width: 30vw;
-  height: 40vh;
-  border-radius: 20px;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding-left: 20px; */
+  gap: 20px;
 }

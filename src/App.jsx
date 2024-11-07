@@ -19,13 +19,17 @@ function App() {
     contact: useRef(null),
   }
 
+  
   const scrollDown = (ref) => {
     window.scrollTo({
       // top: ref.current.offsetTop,
-      top: ref.current.offsetTop - 68,
+      top: ref.current.offsetTop - 73,
       behavior: "smooth",
     });
   };
+  useEffect(() => {
+    window.scrollTo(pages.home)
+  }, []);
 
   return (
     <div className={`app`}>
