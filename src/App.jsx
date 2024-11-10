@@ -23,7 +23,7 @@ function App() {
   const scrollDown = (ref) => {
     window.scrollTo({
       // top: ref.current.offsetTop,
-      top: ref.current.offsetTop - 73,
+      top: ref.current.offsetTop - 75,
       behavior: "smooth",
     });
   };

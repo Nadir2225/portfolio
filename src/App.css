@@ -349,6 +349,59 @@
 }
 
 /* skills */
+.skills-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0px;
+}
+.skills-category {
+  display: flex;
+  padding: 10px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.skills {
+  width: 100%;
+  border-radius: 20px;
+  height: 0px;
+  min-height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0px;
+  flex-wrap: wrap;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+}
+.skills.opened {
+  padding: 20px;
+  min-height: 150px;
+  height: auto;
+  transition: all .5s ease-in-out;
+}
+
+.skill {
+  min-width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+.skill:hover {
+  transition: all .5s ease-in-out;
+  transform: scale(1.1);
+}
 
 /* projects */
 .projects {
