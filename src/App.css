@@ -307,6 +307,189 @@
   background-position: right;
 }
 
+/* about */
+.about-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-paragraph {
+  width: 50vw;
+  min-width: 350px;
+  line-height: 35px;
+  font-size: large;
+  height: 400px;
+  padding: 20px;
+  background-color: var(--light-purple);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex: 1; */
+}
+@media (max-width: 767px)  {
+  .about-paragraph {
+    height: 550px;
+  }
+}
+
+.about-ill {
+  flex: 1;
+  /* background-color: brown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  /* min-height: 50px; */
+  padding: 20px;
+}
+.about-ill > img {
+  height: 270px;
+}
+
+/* skills */
+
+/* projects */
+.projects {
+  width: 100%;
+  min-height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-section {
+  position: relative;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  width: 320px;
+  height: 370px;
+  box-shadow: 0 4px 8px rgba(255, 0, 150, 0.1);
+}
+
+.scroll-section:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.05);
+  box-shadow: 
+    0 4px 8px rgba(255, 0, 150, 0.3),
+    0 8px 16px rgba(255, 75, 150, 0.2),
+    0 4px 8px rgba(255, 150, 150, 0.1);
+}
+.scroll-section > img {
+  width: 100%;
+}
+.scroll-section-title {
+  margin: 10px 0px;
+  font-weight: bold;
+}
+.scroll-section-desc {
+  font-size: .9rem;
+  text-align: center;
+  width: 90%;
+}
+.scroll-section-btns {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.scroll-section-btns a {
+  text-decoration: none;
+}
+.scroll-section-btns div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 7px;
+  padding: 5px;
+  width: max-content;
+  transition: all 0.5s ease;
+  background: linear-gradient(45deg, var(--darkest-blue), var(--pink-purple), var(--dark-purple), var(--second-light-blue));
+  cursor: pointer;
+  background-size: 200%;
+}
+.scroll-section-btns div:hover {
+  transition: all 0.5s ease;
+  background-position: right;
+}
+
+.scroll-section-btns div:active {
+  opacity: .5;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 320px;
+  height: 250px;
+  background: linear-gradient(45deg, var(--underline-blue), var(--purple), var(--second-blue), var(--dark-purple));
+}
+.badge > div {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.projects-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 20px;
+}
+
+.scroll-section-btns2 {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+}
+.scroll-section-btns2 a {
+  text-decoration: none;
+}
+.scroll-section-btns2 .div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 7px;
+  padding: 5px;
+  width: max-content;
+  transition: all 0.5s ease;
+  background: linear-gradient(45deg, var(--darkest-blue), var(--pink-purple), var(--dark-purple), var(--second-light-blue));
+  cursor: pointer;
+  background-size: 200%;
+}
+.scroll-section-btns2 .div:hover {
+  transition: all 0.5s ease;
+  background-position: right;
+}
+
+.scroll-section-btns2 .div:active {
+  opacity: .5;
+}
+
 /* contact section */
 .contact {
   min-height: 100vh;
@@ -451,14 +634,6 @@
   gap: 10px;
 }
 
-/* .home-about-social-links {
-  justify-content: center !important;
-  padding-top: 15px !important;
-  display: inline-block !important;
-  
-  padding-inline-start: 0 !important;
-} */
-
 .home-social-icons {
   position: relative !important;
   display: inline-block !important;
@@ -528,144 +703,4 @@
   .my-contacts {
     display: none;
   }
-}
-
-/* projects */
-.projects {
-  width: 100%;
-  min-height: max-content;
-  display: flex;
-  flex-direction: column;
-}
-
-.scroll-section {
-  position: relative;
-  margin-left: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  transition: all 0.5s ease;
-  overflow: hidden;
-  width: 320px;
-  height: 370px;
-  box-shadow: 0 4px 8px rgba(255, 0, 150, 0.1);
-}
-
-.scroll-section:hover {
-  transition: all 0.5s ease;
-  transform: scale(1.05);
-  box-shadow: 
-    0 4px 8px rgba(255, 0, 150, 0.3),
-    0 8px 16px rgba(255, 75, 150, 0.2),
-    0 4px 8px rgba(255, 150, 150, 0.1);
-}
-.scroll-section > img {
-  width: 100%;
-}
-.scroll-section-title {
-  margin: 10px 0px;
-  font-weight: bold;
-}
-.scroll-section-desc {
-  font-size: .9rem;
-  text-align: center;
-  width: 90%;
-}
-.scroll-section-btns {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.scroll-section-btns a {
-  text-decoration: none;
-}
-.scroll-section-btns div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  border-radius: 7px;
-  padding: 5px;
-  width: max-content;
-  transition: all 0.5s ease;
-  background: linear-gradient(45deg, var(--darkest-blue), var(--pink-purple), var(--dark-purple), var(--second-light-blue));
-  cursor: pointer;
-  background-size: 200%;
-}
-.scroll-section-btns div:hover {
-  transition: all 0.5s ease;
-  background-position: right;
-}
-
-.scroll-section-btns div:active {
-  opacity: .5;
-}
-
-.badge {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 320px;
-  height: 250px;
-  background: linear-gradient(45deg, var(--underline-blue), var(--purple), var(--second-blue), var(--dark-purple));
-}
-.badge > div {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.projects-container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 20px;
-}
-
-.scroll-section-btns2 {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  gap: 10px;
-}
-.scroll-section-btns2 a {
-  text-decoration: none;
-}
-.scroll-section-btns2 .div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  border-radius: 7px;
-  padding: 5px;
-  width: max-content;
-  transition: all 0.5s ease;
-  background: linear-gradient(45deg, var(--darkest-blue), var(--pink-purple), var(--dark-purple), var(--second-light-blue));
-  cursor: pointer;
-  background-size: 200%;
-}
-.scroll-section-btns2 .div:hover {
-  transition: all 0.5s ease;
-  background-position: right;
-}
-
-.scroll-section-btns2 .div:active {
-  opacity: .5;
 }
