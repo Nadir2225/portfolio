@@ -16,7 +16,7 @@ const Project2 = (props) => {
                 <div><AiFillGithub />Github</div>
             </a>
             <a href={props.file} download>
-                <div><FaDownload />download {props.game ? 'zip file' : 'apk'}</div>
+                <div><FaDownload />download apk</div>
             </a>
         </div>
     </div>
