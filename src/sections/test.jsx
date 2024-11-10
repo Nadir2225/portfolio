@@ -56,6 +56,7 @@ const ScrollSection = (props) => {
       the animation should alway be two separated refs */}
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
+          <div>
           <Badge img={web} title="Web development" />
           <Project 
           img={sushi}
@@ -78,6 +79,8 @@ const ScrollSection = (props) => {
           github="https://github.com/Nadir2225/cloud-managment-clone"
           url="https://cloud-app-22.web.app"
           />
+          </div>
+          <div>
           <Badge img={android} title="Android development" />
           <Project2
           img={food}
@@ -103,6 +106,8 @@ const ScrollSection = (props) => {
           file="/files/quizzApp.apk"
           game={false}
           />
+          </div>
+          <div>
           <Badge img={game} title="game development" />
           <Project2
           img={flarpy}
@@ -112,6 +117,7 @@ const ScrollSection = (props) => {
           file="/files/flarpyBob.rar"
           game={true}
           />
+          </div>
         </div>
       </div>
     </section>

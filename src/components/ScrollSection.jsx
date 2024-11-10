@@ -95,7 +95,7 @@ const ScrollSection = (props) => {
           name="Playerfy"
           desc='an audio player of the local audio files.technologies: kotlin, jetpack compose, mediaplayer'
           github="https://github.com/Nadir2225/Playerfy"
-          file="/files/quizzApp.apk"
+          file="/files/playerfy.apk"
           game={false}
           />
           <Project2
