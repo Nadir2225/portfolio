@@ -36,7 +36,7 @@ function Header(props) {
       <Container>
         <Navbar.Brand href="/" className="d-flex">
           {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
-          <div>logo</div>
+          <div style={{ fontWeight: 'bold', color: '#3e28ab', fontSize: '1.6rem'}}>N</div>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
