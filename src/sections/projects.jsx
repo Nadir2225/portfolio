@@ -46,28 +46,28 @@ const Projects = (props) => {
             name="food Recipes app"
             desc='a native android app for food recipes.technologies: kotlin, jetpack compose, roomDB(for local db), exoplayer(to play videos), firebase tools: (authentification, firestore, cloud storage).'
             github="https://github.com/Nadir2225/food-recipes"
-            file="/files/foodrecipes.apk"
+            file="https://drive.google.com/file/d/1Dqhf0o_nafOBVMGSp-4hyvzeODpt_Nyl/view?usp=drive_link"
           />
           <Project2
             img={adhan}
             name="Adhan App"
             desc='a native android app for prayer times and notifications in the prayer times with personalized adhan voices. technologies: kotlin, jetpack compose, workManager'
             github="https://github.com/Nadir2225/Adhan-app"
-            file="/files/adhan.apk"
+            file="https://drive.google.com/file/d/1fIPv1ukBwDQ6qEW4G267HqkGsohZOocO/view?usp=drive_link"
           />
           <Project2
             img={playerfy}
             name="Playerfy"
             desc='an audio player of the local audio files.technologies: kotlin, jetpack compose, mediaplayer'
             github="https://github.com/Nadir2225/Playerfy"
-            file="/files/playerfy.apk"
+            file="https://drive.google.com/file/d/1a_ieL0n2FNvsRAnflWvc6tQFDxVc28pY/view?usp=drive_link"
           />
           <Project2
             img={quizz}
             name="Quizz App"
             desc='a native android app for a quizz. technologies: kotlin, xml'
             github="https://github.com/Nadir2225/Quizz-App"
-            file="/files/quizzapp.apk"
+            file="https://drive.google.com/file/d/1fkNm_PKJ42Og2lVf3-q2GpE7EkDlr37Y/view?usp=drive_link"
           />
         </div>
         <Title first="2D" second="Games" />
@@ -77,8 +77,8 @@ const Projects = (props) => {
             name="Flarpy bird"
             desc='my first 2d game using c# and unity engine with some cool features like accelerating over time etc...'
             github="https://github.com/Nadir2225/flarpy-bob"
-            file86="/files/flarpybird_x86_v1.0.rar"
-            file64="/files/flarpybird_x64_v1.0.rar"
+            file86="https://drive.google.com/file/d/1vccB-WO2tzlYJjH82MuDkFxu04xiuzPX/view?usp=drive_link"
+            file64="https://drive.google.com/file/d/1b_VPbXHI1VLnhRovYyZLZDZKsa_P3za2/view?usp=drive_link"
             />
         </div>
         <div style={{width: '100%', padding: '10px 10px', display: 'flex', textAlign: 'center', justifyContent: 'center'}}>

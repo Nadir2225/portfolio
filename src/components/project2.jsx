@@ -15,7 +15,7 @@ const Project2 = (props) => {
             <a href={props.github} target='_blank'>
                 <div><AiFillGithub />Github</div>
             </a>
-            <a href={props.file} download>
+            <a href={props.file} target='_blank'>
                 <div><FaDownload />download apk</div>
             </a>
         </div>
