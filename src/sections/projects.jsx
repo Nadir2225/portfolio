@@ -81,11 +81,13 @@ const Projects = (props) => {
             file64="/files/flarpybird_x64_v1.0.rar"
             />
         </div>
-        <div style={{width: '100%', padding: '10px 0px', display: 'flex', justifyContent: 'center', gap: '10px'}}>
-          You thought that was it? explore more of my projects in my github space ^^. 
-          <a href="https://github.com/Nadir2225" target='_blank' style={{color: '#c044cd', fontWeight: 'bold', textDecoration: 'none'}}>
-            click me
-          </a>
+        <div style={{width: '100%', padding: '10px 10px', display: 'flex', textAlign: 'center', justifyContent: 'center'}}>
+          <div>
+            You thought that was it? explore more of my projects in my github space ^^. 
+            <a href="https://github.com/Nadir2225" target='_blank' style={{color: '#c044cd', fontWeight: 'bold', marginLeft: '8px', textDecoration: 'none'}}>
+              click me
+            </a>
+          </div>
         </div>
     </div>
   )
